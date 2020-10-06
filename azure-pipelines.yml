@@ -1,4 +1,13 @@
 # Starter pipeline
+- task: FortifyOnDemandStatic@6
+  inputs:
+    FortifyProjects: 'https://dev.azure.com/deependersinghchauhan/_git/Test'
+    ReleaseId: 59265
+    FodConnection: 'Fortify-test(azure-devops)'
+    EntitlementPreference: '1'
+    InProgressScanActionType: '2'
+    RemediationScanPreference: '2'
+    PolicyFailAction: '0'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
